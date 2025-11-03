@@ -213,11 +213,9 @@ hash -r
 echo ""
 echo "🎉 Setup complete!"
 echo "👉 You should now switch to the bash shell: bash"
-echo "👉 You may need to run: source ~/.bashrc"
+#echo "👉 You may need to run: source ~/.bashrc"
 echo "👉 And activate your environment: conda activate $ENV_NAME"
 
 echo ""
-
-conda activate opss25
 
 opss25-help
