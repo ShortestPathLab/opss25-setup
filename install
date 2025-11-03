@@ -169,6 +169,12 @@ ensure_conda_env
 echo "🔄 Activating conda environment '$ENV_NAME'..."
 conda activate "$ENV_NAME"
 
+if [[ "$CONDA_DEFAULT_ENV" != "$ENV_NAME" ]]; then
+        echo "❌ Could not switch to $ENV_NAME conda environment. Aborting."
+        exit 1
+fi
+
+
 # ===============================
 # 7. PlanViz setup
 # ===============================
